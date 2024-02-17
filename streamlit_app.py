@@ -29,22 +29,9 @@ result.paste(img, (0, 0), mask)
 # Display the circular image
 col2.image(result, use_column_width=True)
 #</editor-fold>
-st.header('Christopher Vishnu Kumar')
 #<editor-fold desc="Bio">
-# Custom HTML and CSS to style the info box with dynamic padding
-info_box_html = f"""
-<div style="
-    max-width: max-content;
-    padding: 10px 10px; /* 10px vertical padding, 10px horizontal padding */
-    margin: 10px auto; /* Center the box */
-    text-align: center;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    background-color: #f0f2f6;">
-    Bachelor of Engineering (Honours) - Computer Systems Engineering
-</div>
-"""
+st.header('Christopher Vishnu Kumar')
+st.info('Bachelor of Engineering (Honours) - Computer Systems Engineering')
 #</editor-fold>
 
 st.markdown(info_box_html, unsafe_allow_html=True)
