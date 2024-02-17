@@ -31,13 +31,13 @@ col2.image(result, use_column_width=True)
 #</editor-fold>
 st.header('Christopher Vishnu Kumar')
 #<editor-fold desc="Bio">
-# Custom HTML and CSS to style the info box
+# Custom HTML and CSS to style the info box with dynamic padding
 info_box_html = """
 <div style="
     border-radius: 10px;
     border: 1px solid #ccc;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    padding: 10px;
+    padding: 10px; /* Consistent padding around the text */
     margin: 10px 0;
     text-align: center;
     background-color: #f0f2f6;">
