@@ -77,10 +77,9 @@ st.markdown("""
 
 # Placeholder URLs for the images
 img_urls = [
-    "https://example.com/path/to/your/image1.png",  # Replace with your actual image URL
-    "https://example.com/path/to/your/image2.png",  # Replace with your actual image URL
-    "https://example.com/path/to/your/image3.png",  # Replace with your actual image URL
-    "https://example.com/path/to/your/image4.png"   # Replace with your actual image URL
+    "https://upload.wikimedia.org/wikipedia/commons/f/f8/LinkedIn_icon_circle.svg",  # LinkedIn
+    "https://example.com/path/to/your/image2.png",  # Instagram
+    "https://example.com/path/to/your/image3.png",  # GitHub
 ]
 
 # Links associated with each button
@@ -88,7 +87,6 @@ links = [
     "https://youtube.com/dataprofessor",
     "https://youtube.com/codingprofessor",
     "https://data-professor.medium.com/",
-    "https://twitter.com/thedataprof/"
 ]
 
 # Using Markdown to create a centered container for the buttons
@@ -97,9 +95,8 @@ st.markdown("""
     <a href="{0}" target="_blank"><img src="{1}" /></a>
     <a href="{2}" target="_blank"><img src="{3}" /></a>
     <a href="{4}" target="_blank"><img src="{5}" /></a>
-    <a href="{6}" target="_blank"><img src="{7}" /></a>
 </div>
-""".format(links[0], img_urls[0], links[1], img_urls[1], links[2], img_urls[2], links[3], img_urls[3]), unsafe_allow_html=True)
+""".format(links[0], img_urls[0], links[1], img_urls[1], links[2], img_urls[2], unsafe_allow_html=True)
 # st_button('linkedin', 'https://www.linkedin.com/in/chanin-nantasenamat/', 'Follow me on LinkedIn', icon_size)
 # st_button('newsletter', 'https://sendfox.com/dataprofessor/', 'Sign up for my Newsletter', icon_size)
 # st_button('cup', 'https://www.buymeacoffee.com/dataprofessor/', 'Buy me a Coffee', icon_size)
