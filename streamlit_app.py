@@ -4,7 +4,6 @@ from PIL import Image, ImageDraw
 
 load_css()
 
-col1, col2, col3 = st.columns(3)
 # Load the image
 img = Image.open('dp.png').convert("RGBA")
 
@@ -25,9 +24,8 @@ draw.ellipse((0, 0) + img.size, fill=255)
 result = Image.new('RGBA', img.size, (0, 0, 0, 0))
 result.paste(img, (0, 0), mask)
 
-# Display the circular image
-col2.image(result, use_column_width=True)
-
+# Display the circular image centered
+st.image(result, use_column_width=False, caption=None)
 st.header('Christopher Vishnu Kumar', anchor=None)
 
 # Custom CSS to center the buttons and add spacing
