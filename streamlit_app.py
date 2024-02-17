@@ -2,13 +2,12 @@ import streamlit as st
 from st_functions import st_button, load_css
 from PIL import Image, ImageDraw
 
-# Global CSS to add padding to all containers
-# Global CSS to adjust padding, margins, and set the page background color to space grey
+# Global CSS to adjust padding, margins, and set the page background color to dark grey
 st.markdown("""
 <style>
-/* Set the overall page background to space grey */
+/* Set the overall page background to dark grey */
 body {
-    background-color: #1c1e22 !important;
+    background-color: #333333 !important;
 }
 
 /* Targeting all Streamlit containers to have 10px padding */
@@ -38,7 +37,7 @@ body {
 }
 .centered-text-with-bg {
     text-align: center;
-    background-color: #f0f2f6;
+    background-color: #f0f2f6; /* Adjust if needed to fit the dark theme better */
     border-radius: 20px;
     padding: 20px;
     margin: 10px 0; /* Adjusted to only apply margin vertically */
