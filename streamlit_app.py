@@ -65,8 +65,8 @@ st.markdown("""
 }
 .centered-buttons img {
     border-radius: 50%; /* Makes the images circular */
-    width: 60px; /* Sets the image size, adjust as needed */
-    height: 60px; /* Sets the image size, adjust as needed */
+    width: 40px; /* Sets the image size, adjust as needed */
+    height: 40px; /* Sets the image size, adjust as needed */
 }
 </style>
 """, unsafe_allow_html=True)
