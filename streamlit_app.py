@@ -30,7 +30,21 @@ col2.image(result, use_column_width=True)
 
 st.header('Christopher Vishnu Kumar')
 
-st.info('Bachelor of Engineering (Honours) - Computer Systems Engineering')
+# Custom HTML and CSS to style the info box
+info_box_html = """
+<div style="
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    background-color: #f0f2f6;">
+    Bachelor of Engineering (Honours) - Computer Systems Engineering
+</div>
+"""
+
+st.markdown(info_box_html, unsafe_allow_html=True)
 
 icon_size = 20
 
