@@ -44,6 +44,8 @@ st.markdown("""
 }
 </style>
 <div class="centered-text-with-bg">
+    Intern at Cogninet AI
+    <br>
     Bachelor of Engineering (Honours) - Computer Systems Engineering
     <br>
     University of the South Pacific - Foundation Science Programme
