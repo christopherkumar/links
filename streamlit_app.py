@@ -73,7 +73,7 @@ st.markdown("""
 
 # Placeholder URLs for the images
 img_urls = [
-    "https://en.m.wikipedia.org/wiki/File:LinkedIn_logo_initials.png",  # Replace with your actual image URL
+    "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png",  # Replace with your actual image URL
     "https://example.com/path/to/your/image2.png",  # Replace with your actual image URL
     "https://example.com/path/to/your/image3.png",  # Replace with your actual image URL
     "https://example.com/path/to/your/image4.png"   # Replace with your actual image URL
