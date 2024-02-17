@@ -63,7 +63,7 @@ with st.container():
 # Name
 with st.container():
     st.header('Christopher Vishnu Kumar', anchor=None)
-    st.markdown('<style>.st-bj { margin-bottom: -20px; }</style>', unsafe_allow_html=True)
+    st.markdown('<style>.st-bj { margin-bottom: 0px; }</style>', unsafe_allow_html=True)
 
 # Socials -> Buttons
 with st.container():
