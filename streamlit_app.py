@@ -75,16 +75,14 @@ st.markdown("""
 img_urls = [
     "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png",  # LinkedIn
     "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",  # GitHub
-    "https://example.com/path/to/your/image3.png",  # Instagram
-    "https://example.com/path/to/your/image4.png"   # Replace with your actual image URL
+    "https://en.wikipedia.org/wiki/Instagram#/media/File:Instagram_logo_2022.svg",  # Instagram
 ]
 
 # Links associated with each button
 links = [
-    "https://youtube.com/dataprofessor",
-    "https://youtube.com/codingprofessor",
-    "https://data-professor.medium.com/",
-    "https://twitter.com/thedataprof/"
+    "https://www.linkedin.com/in/christopher-kumar-26b5792b1/",
+    "https://github.com/christopherkumar",
+    "https://www.instagram.com/christopherkumar812/",
 ]
 
 # Using Markdown to create a centered container for the buttons
@@ -93,6 +91,5 @@ st.markdown("""
     <a href="{0}" target="_blank"><img src="{1}" /></a>
     <a href="{2}" target="_blank"><img src="{3}" /></a>
     <a href="{4}" target="_blank"><img src="{5}" /></a>
-    <a href="{6}" target="_blank"><img src="{7}" /></a>
 </div>
 """.format(links[0], img_urls[0], links[1], img_urls[1], links[2], img_urls[2], links[3], img_urls[3]), unsafe_allow_html=True)
