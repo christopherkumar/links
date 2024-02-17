@@ -75,7 +75,7 @@ st.markdown("""
 img_urls = [
     "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png",  # LinkedIn
     "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",  # GitHub
-    "https://en.wikipedia.org/wiki/Instagram#/media/File:Instagram_logo_2022.svg",  # Instagram
+    "https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg",  # Instagram
 ]
 
 # Links associated with each button
