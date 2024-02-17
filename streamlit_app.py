@@ -92,4 +92,4 @@ st.markdown("""
     <a href="{2}" target="_blank"><img src="{3}" /></a>
     <a href="{4}" target="_blank"><img src="{5}" /></a>
 </div>
-""".format(links[0], img_urls[0], links[1], img_urls[1], links[2], img_urls[2], links[3], img_urls[3]), unsafe_allow_html=True)
+""".format(links[0], img_urls[0], links[1], img_urls[1], links[2], img_urls[2], unsafe_allow_html=True)
