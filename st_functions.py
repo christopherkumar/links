@@ -1,5 +1,12 @@
 import streamlit as st
 
+[theme]
+base="dark"
+backgroundColor="#333333"
+secondaryBackgroundColor="#4f5d75"
+textColor="#fafafa"
+font="sans serif"
+
 def load_css():
     with open("style.css") as f:
         st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
