@@ -24,8 +24,12 @@ draw.ellipse((0, 0) + img.size, fill=255)
 result = Image.new('RGBA', img.size, (0, 0, 0, 0))
 result.paste(img, (0, 0), mask)
 
-# Display the circular image centered
-st.image(result, use_column_width=False, caption=None)
+# Resize the image to 200px by 200px
+result = result.resize((200, 200), Image.ANTIALIAS)
+
+# Display the resized circular image centered
+st.image(result, use_column_width=False)
+
 st.header('Christopher Vishnu Kumar', anchor=None)
 
 # Custom CSS to center the buttons and add spacing
