@@ -30,11 +30,23 @@ result.paste(img, (0, 0), mask)
 col2.image(result, use_column_width=True)
 #</editor-fold>
 #<editor-fold desc="Bio">
-st.header('Christopher Vishnu Kumar')
-st.info('Bachelor of Engineering (Honours) - Computer Systems Engineering')
-#</editor-fold>
+st.header('Christopher Vishnu Kumar', anchor=None)
 
-st.markdown(info_box_html, unsafe_allow_html=True)
+# Using Markdown to center text and add a line underneath
+st.markdown("""
+<style>
+.centered-text {
+    text-align: center;
+}
+</style>
+<div class="centered-text">
+    Bachelor of Engineering (Honours) - Computer Systems Engineering
+    <br>
+    <hr style="margin-top: 10px; margin-bottom: 10px;">
+    University of the South Pacific - Foundation Science Programme
+</div>
+""", unsafe_allow_html=True)
+#</editor-fold>
 
 icon_size = 20
 
