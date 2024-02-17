@@ -38,8 +38,8 @@ st.markdown("""
 .centered-text-with-bg {
     text-align: center;
     background-color: #f0f2f6; /* Light grey background, adjust the color as needed */
-    border-radius: 20px; /* Rounded corners */
-    padding: 20px; /* Some padding around the text */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Some padding around the text */
     margin: 10px; /* Margin around the div to separate it from other content */
 }
 </style>
