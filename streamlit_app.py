@@ -30,28 +30,6 @@ col2.image(result, use_column_width=True)
 
 st.header('Christopher Vishnu Kumar', anchor=None)
 
-# Using Markdown to center text within a rectangle with rounded edges
-st.markdown("""
-<style>
-.centered-text-with-bg {
-    text-align: center;
-    background-color: #f0f2f6;
-    border-radius: 20px;
-    padding: 20px;
-    margin: 10px;
-}
-</style>
-<div class="centered-text-with-bg">
-    Intern at Cogninet AI
-    <br>
-    Bachelor of Engineering (Honours) - Computer Systems Engineering
-    <br>
-    University of the South Pacific - Foundation Science Programme
-</div>
-""", unsafe_allow_html=True)
-
-icon_size = 20
-
 # Custom CSS to center the buttons and add spacing
 st.markdown("""
 <style>
@@ -93,3 +71,25 @@ st.markdown(f"""
     <a href="{links[2]}" target="_blank"><img src="{img_urls[2]}" /></a>
 </div>
 """, unsafe_allow_html=True)
+
+# Using Markdown to center text within a rectangle with rounded edges
+st.markdown("""
+<style>
+.centered-text-with-bg {
+    text-align: center;
+    background-color: #f0f2f6;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+</style>
+<div class="centered-text-with-bg">
+    Intern at Cogninet AI
+    <br>
+    Bachelor of Engineering (Honours) - Computer Systems Engineering
+    <br>
+    University of the South Pacific - Foundation Science Programme
+</div>
+""", unsafe_allow_html=True)
+
+icon_size = 20
