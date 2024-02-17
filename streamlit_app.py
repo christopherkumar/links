@@ -77,7 +77,7 @@ st.markdown("""
 
 # Placeholder URLs for the images
 img_urls = [
-    "https://upload.wikimedia.org/wikipedia/commons/f/f8/LinkedIn_icon_circle.svg",  # LinkedIn
+    "https://example.com/path/to/your/image1.png",  # LinkedIn
     "https://example.com/path/to/your/image2.png",  # Instagram
     "https://example.com/path/to/your/image3.png",  # GitHub
 ]
