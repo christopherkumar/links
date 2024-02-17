@@ -58,22 +58,22 @@ st.markdown("""
 .centered-buttons {
     display: flex;
     justify-content: center;
-    gap: 5px; /* Space between buttons */
+    gap: 5px;
 }
 .centered-buttons a {
     display: inline-block; /* Allows the gap to take effect */
 }
 .centered-buttons img {
     border-radius: 50%; /* Makes the images circular */
-    width: 10px; /* Sets the image diameter to 10px */
-    height: 10px; /* Sets the image diameter to 10px */
+    width: 60px; /* Sets the image size, adjust as needed */
+    height: 60px; /* Sets the image size, adjust as needed */
 }
 </style>
 """, unsafe_allow_html=True)
 
 # Placeholder URLs for the images
 img_urls = [
-    "https://example.com/path/to/your/image1.png",  # Replace with your actual image URL
+    "https://en.m.wikipedia.org/wiki/File:LinkedIn_logo_initials.png",  # Replace with your actual image URL
     "https://example.com/path/to/your/image2.png",  # Replace with your actual image URL
     "https://example.com/path/to/your/image3.png",  # Replace with your actual image URL
     "https://example.com/path/to/your/image4.png"   # Replace with your actual image URL
