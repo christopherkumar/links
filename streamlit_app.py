@@ -28,6 +28,7 @@ result.paste(img, (0, 0), mask)
 # Display the circular image
 col2.image(result, use_column_width=True)
 
+st.markdown('<style>h1{margin-top: 0px; margin-bottom: 0px;}</style>', unsafe_allow_html=True)
 st.header('Christopher Vishnu Kumar', anchor=None)
 
 # Custom CSS to center the buttons and add spacing
