@@ -45,8 +45,7 @@ st.markdown("""
 </style>
 <div class="centered-text-with-bg">
     Bachelor of Engineering (Honours) - Computer Systems Engineering
-    <br><br>
-    <hr style="margin-top: 10px; margin-bottom: 10px;">
+    <br>
     University of the South Pacific - Foundation Science Programme
 </div>
 """, unsafe_allow_html=True)
