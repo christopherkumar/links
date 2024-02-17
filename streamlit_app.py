@@ -32,16 +32,20 @@ col2.image(result, use_column_width=True)
 #<editor-fold desc="Bio">
 st.header('Christopher Vishnu Kumar', anchor=None)
 
-# Using Markdown to center text and add a line underneath
+# Using Markdown to center text within a rectangle with rounded edges
 st.markdown("""
 <style>
-.centered-text {
+.centered-text-with-bg {
     text-align: center;
+    background-color: #f0f2f6; /* Light grey background, adjust the color as needed */
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px; /* Some padding around the text */
+    margin: 10px; /* Margin around the div to separate it from other content */
 }
 </style>
-<div class="centered-text">
+<div class="centered-text-with-bg">
     Bachelor of Engineering (Honours) - Computer Systems Engineering
-    <br>
+    <br><br>
     <hr style="margin-top: 10px; margin-bottom: 10px;">
     University of the South Pacific - Foundation Science Programme
 </div>
