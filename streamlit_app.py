@@ -5,7 +5,24 @@ from PIL import Image
 load_css()
 
 col1, col2, col3 = st.columns(3)
-col2.image(Image.open('dp.png'))
+img = Image.open('dp.png')
+# Ensure the image is square for the circular crop
+size = min(img.size)
+left = (img.size[0] - size) / 2
+top = (img.size[1] - size) / 2
+right = (img.size[0] + size) / 2
+bottom = (img.size[1] + size) / 2
+img = img.crop((left, top, right, bottom))
+# Create a circular mask
+mask = Image.new('L', img.size, 0)
+draw = ImageDraw.Draw(mask)
+draw.ellipse((0, 0) + img.size, fill=255)
+# Apply the mask to the image
+img.putalpha(mask)
+# Convert to RGB (in case of PNGs with transparency)
+img = img.convert("RGB")
+# Display the circular image
+col2.image(img, use_column_width=True)
 
 st.header('Christopher Vishnu Kumar')
 
