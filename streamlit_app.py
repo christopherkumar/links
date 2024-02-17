@@ -37,10 +37,10 @@ st.markdown("""
 <style>
 .centered-text-with-bg {
     text-align: center;
-    background-color: #f0f2f6; /* Light grey background, adjust the color as needed */
-    border-radius: 20px; /* Rounded corners */
-    padding: 20px; /* Some padding around the text */
-    margin: 10px; /* Margin around the div to separate it from other content */
+    background-color: #f0f2f6;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
 }
 </style>
 <div class="centered-text-with-bg">
@@ -56,6 +56,7 @@ st.markdown("""
 icon_size = 20
 
 #<editor-fold desc="Buttons">
+col1, col2, col3, col4 = st.columns(4)
 # st_button('youtube', 'https://youtube.com/dataprofessor', 'Data Professor YouTube channel', icon_size)
 # st_button('youtube', 'https://youtube.com/codingprofessor', 'Coding Professor YouTube channel', icon_size)
 # st_button('medium', 'https://data-professor.medium.com/', 'Read my Blogs', icon_size)
