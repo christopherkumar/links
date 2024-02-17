@@ -1,5 +1,4 @@
-import streamlit as st
-from st_functions import load_css
+from st_functions import st_button, load_css
 from PIL import Image, ImageDraw
 
 load_css()
@@ -28,26 +27,23 @@ result.paste(img, (0, 0), mask)
 # Display the circular image
 col2.image(result, use_column_width=True)
 
-# Adjust the margin above the header to reduce space
-st.markdown('<style>h1{margin-top: 0px; margin-bottom: 0px;}</style>', unsafe_allow_html=True)
 st.header('Christopher Vishnu Kumar', anchor=None)
 
-# Custom CSS to adjust spacing between the header and buttons
+# Custom CSS to center the buttons and add spacing
 st.markdown("""
 <style>
 .centered-buttons {
     display: flex;
     justify-content: center;
     gap: 5px;
-    margin-top: 10px; /* Adjusts space between the header and buttons */
 }
 .centered-buttons a {
     display: inline-block; /* Allows the gap to take effect */
 }
 .centered-buttons img {
     border-radius: 50%; /* Makes the images circular */
-    width: 40px; /* Adjusted image size */
-    height: 40px; /* Adjusted image size */
+    width: 40px; /* Sets the image size, adjust as needed */
+    height: 40px; /* Sets the image size, adjust as needed */
 }
 </style>
 """, unsafe_allow_html=True)
@@ -66,7 +62,7 @@ links = [
     "https://www.instagram.com/christopherkumar812/",
 ]
 
-# Using Markdown to create a centered container for the buttons with adjusted spacing
+# Using Markdown to create a centered container for the buttons
 st.markdown(f"""
 <div class="centered-buttons">
     <a href="{links[0]}" target="_blank"><img src="{img_urls[0]}" /></a>
