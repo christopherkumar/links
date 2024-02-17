@@ -39,21 +39,7 @@ with st.container():
 
 # Display Picture
 with st.container():
-    # Load and process the image
-    img = Image.open('dp.png').convert("RGBA")
-    size = min(img.size)
-    left = (img.size[0] - size) / 2
-    top = (img.size[1] - size) / 2
-    right = (img.size[0] + size) / 2
-    bottom = (img.size[1] + size) / 2
-    img = img.crop((left, top, right, bottom))
-    mask = Image.new('L', (200, 200), 0)
-    draw = ImageDraw.Draw(mask)
-    draw.ellipse((0, 0, 200, 200), fill=255)
-    img = img.resize((200, 200))
-    result = Image.new('RGBA', (200, 200), (0, 0, 0, 0))
-    result.paste(img, (0, 0), mask)
-    st.image(result, caption=None)
+    st.image(Image.open('dp.png'))
 
 # Name
 with st.container():
