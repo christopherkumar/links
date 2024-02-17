@@ -1,0 +1,63 @@
+/* Targeting all containers to have 10px padding */
+header, div {
+    padding: 10px !important;
+}
+
+/* Additional styles for custom elements */
+.centered-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.centered-buttons a {
+    display: inline-block;
+}
+
+.centered-buttons img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.centered-text-with-bg {
+    text-align: center;
+    background-color: #f0f2f6;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px 0; /* Adjusted to only apply margin vertically */
+}
+
+/* Centering the profile picture and header */
+#profile-picture-container, header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* Ensure the img within the profile-picture-container is centered as well */
+#profile-picture-container img {
+    display: block; /* Makes the img a block element */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%; /* Keeps the circular shape */
+    width: 200px;
+    height: 200px;
+}
+
+/* Centering all content vertically */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.container {
+    max-width: 600px; /* Adjust as needed */
+    width: 100%;
+    text-align: center; /* Center align inner content */
+    margin-top: auto; /* Push container to the top */
+    margin-bottom: auto; /* Push container to the bottom */
+}
