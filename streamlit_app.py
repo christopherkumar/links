@@ -8,7 +8,7 @@ load_css()
 img = Image.open('dp.png').convert("RGBA")
 
 # Ensure the image is square
-size = min(img.size)
+size = min(img.size)/4
 left = (img.size[0] - size) / 2
 top = (img.size[1] - size) / 2
 right = (img.size[0] + size) / 2
