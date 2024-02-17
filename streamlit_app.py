@@ -23,6 +23,7 @@ draw.ellipse((0, 0) + img.size, fill=255)
 # Apply mask to the image, keeping transparency
 result = Image.new('RGBA', img.size, (0, 0, 0, 0))
 result.paste(img, (0, 0), mask)
+result = result.resize(100, 100)
 
 # Display the circular image centered
 st.image(result, use_column_width=True, caption=None)
