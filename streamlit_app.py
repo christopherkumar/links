@@ -2,23 +2,18 @@ import streamlit as st
 from st_functions import st_button, load_css
 from PIL import Image, ImageDraw
 
-# Global CSS to adjust padding and margins
+# Global CSS to add padding to all containers
 st.markdown("""
 <style>
 /* Targeting all Streamlit containers to have 10px padding */
 .stMarkdown, .stImage, .stHeader, .stButton {
     padding: 10px !important;
 }
-/* Reduce bottom margin of header to bring it closer to the following content */
-.stHeader>div>div>div>div {
-    margin-bottom: 0 !important;
-}
-/* Additional custom styles */
+/* Additional styles for custom elements */
 .centered-buttons {
     display: flex;
     justify-content: center;
     gap: 5px;
-    margin-top: 10px; /* Adjusted margin to reduce space */
 }
 .centered-buttons a {
     display: inline-block;
@@ -63,7 +58,6 @@ with st.container():
 # Name
 with st.container():
     st.header('Christopher Vishnu Kumar', anchor=None)
-    st.markdown('<style>.st-bj { margin-bottom: 0px; }</style>', unsafe_allow_html=True)
 
 # Socials -> Buttons
 with st.container():
