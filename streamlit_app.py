@@ -32,8 +32,7 @@ result.paste(img, (0, 0), mask)
 st.image(result, caption=None, use_column_width=False)
 st.write('\n')  # Adds an empty line for spacing
 
-# NAME with added spacing above
-st.markdown('<br>', unsafe_allow_html=True)  # Adds an empty line for spacing
+# NAME
 st.header('Christopher Vishnu Kumar', anchor=None)
 
 # SOCIALS -> BUTTONS with custom CSS for spacing
