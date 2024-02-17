@@ -56,34 +56,50 @@ st.markdown("""
 icon_size = 20
 
 #<editor-fold desc="Buttons">
-col1, col2, col3, col4 = st.columns(4)
-with col1:
-    st.markdown("""
-    <a href="https://youtube.com/dataprofessor" target="_blank">
-        <button style="border-radius:50%;width:60px;height:60px;">YT1</button>
-    </a>
-    """, unsafe_allow_html=True)
+# Custom CSS to center the buttons and add spacing
+st.markdown("""
+<style>
+.centered-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.centered-buttons a {
+    display: inline-block; /* Allows the gap to take effect */
+}
+.centered-buttons img {
+    border-radius: 50%; /* Makes the images circular */
+    width: 60px; /* Sets the image size, adjust as needed */
+    height: 60px; /* Sets the image size, adjust as needed */
+}
+</style>
+""", unsafe_allow_html=True)
 
-with col2:
-    st.markdown("""
-    <a href="https://youtube.com/codingprofessor" target="_blank">
-        <button style="border-radius:50%;width:60px;height:60px;">YT2</button>
-    </a>
-    """, unsafe_allow_html=True)
+# Placeholder URLs for the images
+img_urls = [
+    "https://example.com/path/to/your/image1.png",  # Replace with your actual image URL
+    "https://example.com/path/to/your/image2.png",  # Replace with your actual image URL
+    "https://example.com/path/to/your/image3.png",  # Replace with your actual image URL
+    "https://example.com/path/to/your/image4.png"   # Replace with your actual image URL
+]
 
-with col3:
-    st.markdown("""
-    <a href="https://data-professor.medium.com/" target="_blank">
-        <button style="border-radius:50%;width:60px;height:60px;">Blog</button>
-    </a>
-    """, unsafe_allow_html=True)
+# Links associated with each button
+links = [
+    "https://youtube.com/dataprofessor",
+    "https://youtube.com/codingprofessor",
+    "https://data-professor.medium.com/",
+    "https://twitter.com/thedataprof/"
+]
 
-with col4:
-    st.markdown("""
-    <a href="https://twitter.com/thedataprof/" target="_blank">
-        <button style="border-radius:50%;width:60px;height:60px;">Tw</button>
-    </a>
-    """, unsafe_allow_html=True)
+# Using Markdown to create a centered container for the buttons
+st.markdown("""
+<div class="centered-buttons">
+    <a href="{0}" target="_blank"><img src="{1}" /></a>
+    <a href="{2}" target="_blank"><img src="{3}" /></a>
+    <a href="{4}" target="_blank"><img src="{5}" /></a>
+    <a href="{6}" target="_blank"><img src="{7}" /></a>
+</div>
+""".format(links[0], img_urls[0], links[1], img_urls[1], links[2], img_urls[2], links[3], img_urls[3]), unsafe_allow_html=True)
 # st_button('linkedin', 'https://www.linkedin.com/in/chanin-nantasenamat/', 'Follow me on LinkedIn', icon_size)
 # st_button('newsletter', 'https://sendfox.com/dataprofessor/', 'Sign up for my Newsletter', icon_size)
 # st_button('cup', 'https://www.buymeacoffee.com/dataprofessor/', 'Buy me a Coffee', icon_size)
