@@ -26,7 +26,7 @@ result.paste(img, (0, 0), mask)
 result = result.resize(100, 100)
 
 # Display the circular image centered
-st.image(result, use_column_width=True, caption=None)
+st.image(result, use_column_width=False, caption=None)
 
 st.header('Christopher Vishnu Kumar', anchor=None)
 
