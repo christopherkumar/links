@@ -9,7 +9,7 @@ col2.image(Image.open('dp.png'))
 
 st.header('Christopher Vishnu Kumar')
 
-st.info('Developer Advocate, Content Creator and ex-Professor with an interest in Data Science and Bioinformatics')
+st.info('Bachelor of Engineering (Honours) - Computer Systems Engineering')
 
 icon_size = 20
 
