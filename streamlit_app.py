@@ -62,15 +62,15 @@ st.markdown("""
 .centered-buttons {
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: 5px; /* Space between buttons */
 }
 .centered-buttons a {
     display: inline-block; /* Allows the gap to take effect */
 }
 .centered-buttons img {
     border-radius: 50%; /* Makes the images circular */
-    width: 60px; /* Sets the image size, adjust as needed */
-    height: 60px; /* Sets the image size, adjust as needed */
+    width: 10px; /* Sets the image diameter to 10px */
+    height: 10px; /* Sets the image diameter to 10px */
 }
 </style>
 """, unsafe_allow_html=True)
