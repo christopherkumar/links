@@ -57,10 +57,33 @@ icon_size = 20
 
 #<editor-fold desc="Buttons">
 col1, col2, col3, col4 = st.columns(4)
-# st_button('youtube', 'https://youtube.com/dataprofessor', 'Data Professor YouTube channel', icon_size)
-# st_button('youtube', 'https://youtube.com/codingprofessor', 'Coding Professor YouTube channel', icon_size)
-# st_button('medium', 'https://data-professor.medium.com/', 'Read my Blogs', icon_size)
-# st_button('twitter', 'https://twitter.com/thedataprof/', 'Follow me on Twitter', icon_size)
+with col1:
+    st.markdown("""
+    <a href="https://youtube.com/dataprofessor" target="_blank">
+        <button style="border-radius:50%;width:60px;height:60px;">YT1</button>
+    </a>
+    """, unsafe_allow_html=True)
+
+with col2:
+    st.markdown("""
+    <a href="https://youtube.com/codingprofessor" target="_blank">
+        <button style="border-radius:50%;width:60px;height:60px;">YT2</button>
+    </a>
+    """, unsafe_allow_html=True)
+
+with col3:
+    st.markdown("""
+    <a href="https://data-professor.medium.com/" target="_blank">
+        <button style="border-radius:50%;width:60px;height:60px;">Blog</button>
+    </a>
+    """, unsafe_allow_html=True)
+
+with col4:
+    st.markdown("""
+    <a href="https://twitter.com/thedataprof/" target="_blank">
+        <button style="border-radius:50%;width:60px;height:60px;">Tw</button>
+    </a>
+    """, unsafe_allow_html=True)
 # st_button('linkedin', 'https://www.linkedin.com/in/chanin-nantasenamat/', 'Follow me on LinkedIn', icon_size)
 # st_button('newsletter', 'https://sendfox.com/dataprofessor/', 'Sign up for my Newsletter', icon_size)
 # st_button('cup', 'https://www.buymeacoffee.com/dataprofessor/', 'Buy me a Coffee', icon_size)
