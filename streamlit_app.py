@@ -86,10 +86,10 @@ links = [
 ]
 
 # Using Markdown to create a centered container for the buttons
-st.markdown("""
+st.markdown(f"""
 <div class="centered-buttons">
-    <a href="{0}" target="_blank"><img src="{1}" /></a>
-    <a href="{2}" target="_blank"><img src="{3}" /></a>
-    <a href="{4}" target="_blank"><img src="{5}" /></a>
+    <a href="{links[0]}" target="_blank"><img src="{img_urls[0]}" /></a>
+    <a href="{links[1]}" target="_blank"><img src="{img_urls[1]}" /></a>
+    <a href="{links[2]}" target="_blank"><img src="{img_urls[2]}" /></a>
 </div>
-""".format(links[0], img_urls[0], links[1], img_urls[1], links[2], img_urls[2], unsafe_allow_html=True)
+""", unsafe_allow_html=True)
