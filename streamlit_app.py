@@ -8,7 +8,7 @@ load_css()
 img = Image.open('dp.png').convert("RGBA")
 
 # Ensure the image is square
-size = min(img.size)/4
+size = min(img.size)
 left = (img.size[0] - size) / 2
 top = (img.size[1] - size) / 2
 right = (img.size[0] + size) / 2
@@ -16,16 +16,19 @@ bottom = (img.size[1] + size) / 2
 img = img.crop((left, top, right, bottom))
 
 # Create a circular mask to apply
-mask = Image.new('L', img.size, 0)
+mask = Image.new('L', (200, 200), 0)  # Adjusted mask size to 200x200
 draw = ImageDraw.Draw(mask)
-draw.ellipse((0, 0) + img.size, fill=255)
+draw.ellipse((0, 0, 200, 200), fill=255)  # Adjusted ellipse size to fill the new mask size
 
-# Apply mask to the image, keeping transparency
-result = Image.new('RGBA', img.size, (0, 0, 0, 0))
+# Resize the cropped image to 200x200 pixels without antialiasing
+img = img.resize((200, 200))
+
+# Apply mask to the resized image, keeping transparency
+result = Image.new('RGBA', (200, 200), (0, 0, 0, 0))
 result.paste(img, (0, 0), mask)
 
 # Display the circular image centered
-st.image(result, use_column_width=False, caption=None)
+st.image(result, caption=None)
 
 st.header('Christopher Vishnu Kumar', anchor=None)
 
