@@ -25,7 +25,7 @@ st.markdown("""
 }
 .centered-text-with-bg {
     text-align: center;
-    background-color: #f0f2f6;
+    background-color: #ddebed;
     border-radius: 20px;
     padding: 20px;
     margin: 10px 0; /* Adjusted to only apply margin vertically */
