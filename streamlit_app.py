@@ -73,14 +73,13 @@ with st.container():
     }
     </style>
     <div class="info-box">
-        <p>Intern at Cogninet AI</p>
-        <p>Bachelor of Engineering (Honours) - Computer Systems Engineering</p>
-        <p>University of the South Pacific - Foundation Science Programme</p>
-        
-        <ul>
-            <li>Data Science</li>
-            <li>Bioinformatics</li>
-        </ul>
+        <div class="centered-text-with-bg">
+            Intern at Cogninet AI
+            <br>
+            Bachelor of Engineering (Honours) - Computer Systems Engineering
+            <br>
+            University of the South Pacific - Foundation Science Programme
+        </div>
     </div>
     """, unsafe_allow_html=True)
 
