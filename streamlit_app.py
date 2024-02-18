@@ -134,6 +134,7 @@ with st.container():
     """, unsafe_allow_html=True)
 
 # Experience/Education
+<style>
 .bio-with-rounded-corners {
     text-align: center;
     background-color: #f0f2f6; /* Light grey background */
@@ -142,16 +143,15 @@ with st.container():
     margin: 10px 0; /* Vertical spacing outside */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow for depth */
 }
-with st.container():
-    st.markdown("""
-    <div class="centered-text-with-bg">
-        Intern at Cogninet AI
-        <br>
-        Bachelor of Engineering (Honours) - Computer Systems Engineering
-        <br>
-        University of the South Pacific - Foundation Science Programme
-    </div>
-    """, unsafe_allow_html=True)
+</style>
+<div class="bio-with-rounded-corners">
+    Intern at Cogninet AI
+    <br>
+    Bachelor of Engineering (Honours) - Computer Systems Engineering
+    <br>
+    University of the South Pacific - Foundation Science Programme
+</div>
+
     
 with st.container():
     st.markdown("""
