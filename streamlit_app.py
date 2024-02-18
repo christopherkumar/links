@@ -24,16 +24,11 @@ st.markdown("""
     height: 40px;
 }
 .centered-text-with-bg {
-    text-align: center; /* Centers the text horizontally */
-    background-color: #f0f2f6; /* Light grey background color */
-    border-radius: 20px; /* Rounded corners with a 20px radius */
-    padding: 20px; /* Padding inside the rectangle */
-    margin: 10px 0; /* Vertical margin outside the rectangle, no horizontal margin */
-    /* Optional properties for enhanced appearance */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adds a subtle shadow for depth */
-    max-width: 80%; /* Limits the maximum width, optional */
-    margin-left: auto; /* Centers the block horizontally */
-    margin-right: auto; /* Centers the block horizontally */
+    text-align: center;
+    background-color: #f0f2f6;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px 0; /* Adjusted to only apply margin vertically */
 }
 </style>
 """, unsafe_allow_html=True)
