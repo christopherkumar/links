@@ -64,6 +64,26 @@ with st.container():
 # Experience/Education
 with st.container():
     st.markdown("""
+    <style>
+    .info-box {
+        border-left: 5px solid #1e88e5; /* Info blue border */
+        background-color: #e8f0fe; /* Light blue background */
+        padding: 10px; /* Padding inside the box */
+        margin: 10px 0; /* Margin outside the box */
+        border-radius: 5px; /* Optional: rounded corners */
+    }
+    </style>
+    <div class="info-box">
+        <p>Developer Advocate, Content Creator, and ex-Professor with an interest in:</p>
+        <ul>
+            <li>Data Science</li>
+            <li>Bioinformatics</li>
+        </ul>
+    </div>
+    """, unsafe_allow_html=True)
+
+with st.container():
+    st.markdown("""
     <div class="centered-text-with-bg">
         Intern at Cogninet AI
         <br>
