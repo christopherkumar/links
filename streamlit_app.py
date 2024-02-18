@@ -66,14 +66,17 @@ with st.container():
     st.markdown("""
     <style>
     .info-box {
-        background-color: #ddebed; /* Light blue background */
-        padding: 10px; /* Padding inside the box */
-        margin: 10px 0; /* Margin outside the box */
-        border-radius: 5px; /* Optional: rounded corners */
+        background-color: #ddebed;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
     }
     </style>
     <div class="info-box">
-        <p>Developer Advocate, Content Creator, and ex-Professor with an interest in:</p>
+        <p>Intern at Cogninet AI</p>
+        <p>Bachelor of Engineering (Honours) - Computer Systems Engineering</p>
+        <p>University of the South Pacific - Foundation Science Programme</p>
+        
         <ul>
             <li>Data Science</li>
             <li>Bioinformatics</li>
