@@ -64,27 +64,6 @@ with st.container():
 # Experience/Education
 with st.container():
     st.markdown("""
-    <style>
-    .info-box {
-        background-color: #ddebed;
-        padding: 10px;
-        margin: 10px 0;
-        border-radius: 5px;
-    }
-    </style>
-    <div class="info-box">
-        <div class="centered-text-with-bg">
-            Intern at Cogninet AI
-            <br>
-            Bachelor of Engineering (Honours) - Computer Systems Engineering
-            <br>
-            University of the South Pacific - Foundation Science Programme
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
-
-with st.container():
-    st.markdown("""
     <div class="centered-text-with-bg">
         Intern at Cogninet AI
         <br>
