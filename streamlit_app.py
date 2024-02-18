@@ -62,6 +62,14 @@ with st.container():
     """, unsafe_allow_html=True)
 
 # Experience/Education
+.bio-with-rounded-corners {
+    text-align: center;
+    background-color: #f0f2f6; /* Light grey background */
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px; /* Inner spacing */
+    margin: 10px 0; /* Vertical spacing outside */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow for depth */
+}
 with st.container():
     st.markdown("""
     <div class="centered-text-with-bg">
