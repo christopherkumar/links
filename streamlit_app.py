@@ -66,7 +66,7 @@ with st.container():
     st.markdown("""
     <style>
     .info-box {
-        background-color: #28b4c7; /* Light blue background */
+        background-color: #56939c; /* Light blue background */
         padding: 10px; /* Padding inside the box */
         margin: 10px 0; /* Margin outside the box */
         border-radius: 5px; /* Optional: rounded corners */
