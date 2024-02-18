@@ -134,6 +134,7 @@ with st.container():
     """, unsafe_allow_html=True)
 
 # Experience/Education
+st.markdown("""
 <style>
 .bio-with-rounded-corners {
     text-align: center;
@@ -143,6 +144,8 @@ with st.container():
     margin: 10px 0; /* Vertical spacing outside */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow for depth */
 }
+""", unsafe_allow_html=True)
+
 </style>
 <div class="bio-with-rounded-corners">
     Intern at Cogninet AI
