@@ -42,7 +42,6 @@ with st.container():
     <div class="centered-buttons">
         <a href="{links[0]}" target="_blank"><img src="{img_urls[0]}" /></a>
         <a href="{links[1]}" target="_blank"><img src="{img_urls[1]}" /></a>
-        <a href="{links[1]}" target="_blank"><img src="{img_urls[1]}" /></a>
         <a href="{links[2]}" target="_blank"><img src="{img_urls[2]}" /></a>
     </div>
     """, unsafe_allow_html=True)
