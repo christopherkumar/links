@@ -1,12 +1,10 @@
 import streamlit as st
 from st_functions import st_button, load_css
-from PIL import Image, ImageDraw
-
+from PIL import Image
 
 # CSS Load
 with st.container():
     load_css()
-
 
 # Display Picture
 with st.container():
