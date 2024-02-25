@@ -2,39 +2,6 @@ import streamlit as st
 from st_functions import st_button, load_css
 from PIL import Image, ImageDraw
 
-# Global CSS to add padding to all containers
-st.markdown("""
-<style>
-/* Targeting all Streamlit containers to have 10px padding */
-.stMarkdown, .stImage, .stHeader, .stButton {
-    padding: 10px !important;
-}
-/* Additional styles for custom elements */
-.centered-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-}
-.centered-buttons a {
-    display: inline-block;
-}
-.centered-buttons img {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-}
-.centered-text-with-bg {
-    text-align: center;
-    background-color: #ddebed;
-    border-radius: 20px;
-    padding: 20px;
-    margin: 10px 0; /* Adjusted to only apply margin vertically */
-}
-.text-black {
-    color: black !important;
-}
-</style>
-""", unsafe_allow_html=True)
 
 # CSS Load
 with st.container():
