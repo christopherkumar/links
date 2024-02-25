@@ -1,21 +1,7 @@
 import streamlit as st
 from st_functions import st_button, load_css
 from PIL import Image, ImageDraw
-from image_processing import change_image_background
 
-
-# Function to handle the image processing and display
-def process_and_display_image():
-    # Assuming 'logo.png' is the path to your GitHub logo with a transparent background
-    original_image_path = 'https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg'
-    processed_image_path = 'logo_with_white_background.png'
-
-    # Change the background color of the image
-    change_image_background(original_image_path, processed_image_path)
-
-    # Display the image with a white background in Streamlit
-    st.image(processed_image_path)
-    
 
 # CSS Load
 with st.container():
@@ -33,7 +19,7 @@ with st.container():
 # Socials -> Buttons
 with st.container():
     img_urls = ["https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png",
-                process_and_display_image(),
+                "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
                 "https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg"]
     links = ["https://www.linkedin.com/in/christopher-kumar-26b5792b1/",
              "https://github.com/christopherkumar",
