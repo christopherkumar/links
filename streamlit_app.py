@@ -30,6 +30,9 @@ st.markdown("""
     padding: 20px;
     margin: 10px 0; /* Adjusted to only apply margin vertically */
 }
+.text-black {
+    color: black !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
@@ -64,7 +67,7 @@ with st.container():
 # Experience/Education
 with st.container():
     st.markdown("""
-    <div class="centered-text-with-bg">
+    <div class="centered-text-with-bg text-black">
         Intern at Cogninet AI
         <br>
         Bachelor of Engineering (Honours) - Computer Systems Engineering
